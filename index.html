@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portofolio Keren</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-900 text-white font-sans">
+
+  <!-- Navbar -->
+  <nav class="fixed top-0 left-0 w-full bg-gray-800 p-4 z-50">
+    <div class="container mx-auto flex justify-between items-center">
+      <h1 class="text-xl font-bold">KilersBotz</h1>
+      <ul class="flex space-x-4">
+        <li><a href="#home" class="hover:text-blue-400">Home</a></li>
+        <li><a href="#about" class="hover:text-blue-400">About</a></li>
+        <li><a href="#projects" class="hover:text-blue-400">Projects</a></li>
+        <li><a href="#contact" class="hover:text-blue-400">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section id="home" class="pt-24 pb-12 bg-gray-900">
+    <div class="container mx-auto text-center">
+      <h1 class="text-4xl font-bold mb-4">Halo, Gw KilersBotz!</h1>
+      <p class="text-gray-400 text-lg">Gw suka bikin hal-hal keren pake kode. Scroll ke bawah buat tau lebih lanjut.</p>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="py-12 bg-gray-800">
+    <div class="container mx-auto text-center">
+      <h2 class="text-3xl font-bold mb-4">Tentang Gw</h2>
+      <p class="text-gray-400">Gw suka ngoding, ngegame, sama eksplor hal baru. Simpel aja sih hidup gw, tp seru!</p>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="py-12 bg-gray-900">
+    <div class="container mx-auto">
+      <h2 class="text-3xl font-bold text-center mb-8">Projects Gw</h2>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div class="bg-gray-800 p-6 rounded-lg text-center">
+          <h3 class="text-xl font-bold">Project 1</h3>
+          <p class="text-gray-400 mt-2">Deskripsi singkat project pertama gw.</p>
+        </div>
+        <div class="bg-gray-800 p-6 rounded-lg text-center">
+          <h3 class="text-xl font-bold">Project 2</h3>
+          <p class="text-gray-400 mt-2">Ini project kedua gw, lumayan keren juga sih.</p>
+        </div>
+        <div class="bg-gray-800 p-6 rounded-lg text-center">
+          <h3 class="text-xl font-bold">Project 3</h3>
+          <p class="text-gray-400 mt-2">Yang ini project terbaru gw, cekidot!</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="py-12 bg-gray-800">
+    <div class="container mx-auto text-center">
+      <h2 class="text-3xl font-bold mb-4">Contact Gw</h2>
+      <p class="text-gray-400">Kalo lu mau ngobrol atau kerja bareng, hubungin gw aja ya!</p>
+      <button class="mt-4 bg-blue-600 px-6 py-2 rounded-lg hover:bg-blue-700">Chat Gw</button>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-900 text-center p-4">
+    <p class="text-gray-600">&copy; 2023 KilersBotz. All rights reserved.</p>
+  </footer>
+
+  <script>
+    // Smooth scrolling for anchor links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+          behavior: 'smooth'
+        });
+      });
+    });
+  </script>
+
+</body>
+</html>
